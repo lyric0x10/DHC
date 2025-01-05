@@ -1,4 +1,4 @@
-local Dropping = true
+local Dropping = false
 local Dropping_Group = 1 --1 = Alts 1-4 and 2 = 5-8
 
 if Dropping == true then
