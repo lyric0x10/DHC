@@ -3,7 +3,7 @@ local Dropping_Group = 1 --1 = Alts 1-4 and 2 = 5-8
 
 if Dropping == true then
     getgenv().Host = "9kDash" -- Case Sensitive
-    getgenv().FPS = 5
+    getgenv().FPS = 2
     getgenv().Alts = {
         Alt1 = 7817082291,
         Alt2 = 7817208777,
