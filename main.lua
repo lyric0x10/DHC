@@ -2,7 +2,7 @@ local Dropping = true
 local Dropping_Group = 1 --1 = Alts 1-4 and 2 = 5-8
 
 if Dropping == true then
-    getgenv().Host = "BMX_Kn0x" -- Case Sensitive
+    getgenv().Host = "9kDash" -- Case Sensitive
     getgenv().FPS = 5
     getgenv().Alts = {
         Alt1 = 7817082291,
