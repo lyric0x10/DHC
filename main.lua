@@ -31,7 +31,7 @@ else
         },
         ["Serverhop"] = {
             ["Cycle"] = 1, -- 1 = After dying once.
-            ["Time"] = 14, -- 1 = After 1 Minute.
+            ["Time"] = 0, -- 1 = After 1 Minute.
             ["Kick"] = true, -- true = After getting kicked.
             ["Blacklisted_IDs"] = {1234567890, 1234567890} -- If UserID was found ingame, Detects new joining players too.
         },
