@@ -39,5 +39,82 @@ elseif Dropping == "Farming" then
     }
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2f5a5d4b9fc7ed0f115580a53bfab777.lua"))()
 else
-    
+    -- // Ensure script runs in Da Hood (put in autoexec)
+if game.PlaceId ~= 2788229376 then return end
+
+-- // Services and Variables
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local MainEvent = ReplicatedStorage.MainEvent
+local detectionFlags = {
+    "CHECKER_1",
+    "TeleportDetect",
+    "OneMoreTime",
+    "BANREMOTE",
+    "KICKREMOTE",
+    "PERMAIDBAN",
+    "BR_KICKPC",
+    "BR_KICKMOBILE",
+    "GUI_CHECK",
+    "checkingSPEED"
+}
+
+-- // Helper Functions
+local function isFlaggedEvent(event)
+    return table.find(detectionFlags, tostring(event))
+end
+
+-- // Hook __namecall
+local __namecall
+__namecall = hookmetamethod(game, "__namecall", function(self, ...)
+    local args = {...}
+    local method = getnamecallmethod()
+
+    -- Block flagged events
+    if method == "FireServer" and self == MainEvent and isFlaggedEvent(args[2]) then
+        return
+    end
+
+    -- Anti-crash logic
+    if not checkcaller() and getfenv(2).crash then
+        local fenv = getfenv(2)
+        fenv.crash = function() end
+        setfenv(2, fenv)
+    end
+
+    return __namecall(self, ...)
+end)
+
+-- // Hook __newindex to block changes to Humanoid's WalkSpeed/JumpPower
+local __newindex
+__newindex = hookmetamethod(game, "__newindex", function(t, k, v)
+    if not checkcaller() and t:IsA("Humanoid") and (k == "WalkSpeed" or k == "JumpPower") then
+        return
+    end
+    return __newindex(t, k, v)
+end)
+
+-- // Hook metatable __namecall for additional event detection
+local mt = getrawmetatable(game)
+local backupNamecall = mt.__namecall
+setreadonly(mt, false)
+
+mt.__namecall = newcclosure(function(self, ...)
+    local args = {...}
+    local method = getnamecallmethod()
+
+    -- Block flagged events
+    if method == "FireServer" and self == MainEvent and isFlaggedEvent(args[2]) then
+        return wait(9e9)
+    end
+
+    -- Destroy calling script if anti-crash conditions are met
+    if not checkcaller() and getfenv(1).crash and getfenv(1).checkChild then
+        getcallingscript():Destroy()
+        return wait(9e9)
+    end
+
+    return backupNamecall(self, ...)
+end)
+setreadonly(mt, true)
+
 end
