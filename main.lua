@@ -1,4 +1,4 @@
-local Dropping = "Farming"
+local Dropping = false
 local Dropping_Group = 1 --1 = Alts 1-4 and 2 = 5-8
 
 if Dropping == true then
@@ -19,7 +19,7 @@ if Dropping == true then
         }
     end
     loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
-elseif Dropping == "Farming" then
+else
     script_key = "jyGvAPALEgSsQsVIXAtcfCqrEkpVGupL"
     getgenv().AutofarmSettings = {
         ["Fps"] = 5,
@@ -38,6 +38,4 @@ elseif Dropping == "Farming" then
         " discord.gg/iku "
     }
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2f5a5d4b9fc7ed0f115580a53bfab777.lua"))()
-else
-
 end
