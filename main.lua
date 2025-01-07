@@ -1,10 +1,7 @@
 local Dropping = true
 
 if Dropping == true then
-    --if game:GetService("Players").LocalPlayer.Name == "Lyrics_DHC" then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
-        --return
-    --end
+    
     getgenv().Host = "Lyrics_DHC" -- Case Sensitive
     getgenv().FPS = 2
     getgenv().Alts = {
@@ -17,7 +14,11 @@ if Dropping == true then
         Alt7 = 7826163634,
         Alt8 = 7820540058
     }
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
+    if game:GetService("Players").LocalPlayer.Name == "Lyrics_DHC" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
+    end
 else
     script_key = "jyGvAPALEgSsQsVIXAtcfCqrEkpVGupL"
     getgenv().AutofarmSettings = {
