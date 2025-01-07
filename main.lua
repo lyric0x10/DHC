@@ -1,23 +1,18 @@
-local Dropping = false
-local Dropping_Group = 1 --1 = Alts 1-4 and 2 = 5-8
+local Dropping = true
 
 if Dropping == true then
-    getgenv().Host = "9kDash" -- Case Sensitive
+    getgenv().Host = "Lyrics_DHC" -- Case Sensitive
     getgenv().FPS = 2
     getgenv().Alts = {
-        Alt1 = 7817082291,
+        Alt1 = 7825747703,
         Alt2 = 7817208777,
         Alt3 = 7817185226,
-        Alt4 = 7817236038
+        Alt4 = 7817236038,
+        Alt5 = 7817331983,
+        Alt6 = 7817364954,
+        Alt7 = 7826163634,
+        Alt8 = 7820540058
     }
-    if Dropping_Group == 2 then
-        getgenv().Alts = {
-            Alt1 = 7817331983,
-            Alt2 = 7817364954,
-            Alt3 = 7817393886,
-            Alt4 = 7820540058
-        }
-    end
     loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
 else
     script_key = "jyGvAPALEgSsQsVIXAtcfCqrEkpVGupL"
