@@ -33,7 +33,7 @@ else
             ["Cycle"] = 1, -- 1 = After dying once.
             ["Time"] = 0, -- 1 = After 1 Minute.
             ["Kick"] = true, -- true = After getting kicked.
-            ["Blacklisted_IDs"] = {1234567890, 1234567890} -- If UserID was found ingame, Detects new joining players too.
+            ["Blacklisted_IDs"] = {7825747703, 7817208777, 7817185226, 7817236038, 7817331983,7817364954, 7826163634, 7820540058} -- If UserID was found ingame, Detects new joining players too.
         },
         " discord.gg/iku "
     }
