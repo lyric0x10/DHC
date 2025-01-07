@@ -1,6 +1,9 @@
 local Dropping = true
 
 if Dropping == true then
+    if game:GetService("Players").LocalPlayer.Name == "Lyrics_DHC" then
+        return
+    end
     getgenv().Host = "Lyrics_DHC" -- Case Sensitive
     getgenv().FPS = 2
     getgenv().Alts = {
