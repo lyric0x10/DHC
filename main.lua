@@ -2,6 +2,7 @@ local Dropping = true
 
 if Dropping == true then
     if game:GetService("Players").LocalPlayer.Name == "Lyrics_DHC" then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
         return
     end
     getgenv().Host = "Lyrics_DHC" -- Case Sensitive
