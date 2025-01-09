@@ -2,7 +2,7 @@ local Dropping = true
 
 if Dropping == true then
     
-    getgenv().Host = "Lyrics_DHC" -- Case Sensitive
+    getgenv().Host = "Lyric_Controller" -- Case Sensitive
     getgenv().FPS = 2
     getgenv().Alts = {
         Alt1 = 7825747703,
