@@ -1,4 +1,4 @@
-local Dropping = false
+local Dropping = true
 
 if Dropping == true then
     
