@@ -15,10 +15,10 @@ if Dropping == true then
         Alt8 = 7820540058
     }
     if game:GetService("Players").LocalPlayer.Name == "Lyric_Controller" then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
     else
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
     end
 else
     script_key = "jyGvAPALEgSsQsVIXAtcfCqrEkpVGupL"
