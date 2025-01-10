@@ -1,4 +1,4 @@
-local Dropping = false
+local Dropping = true
 
 if Dropping == true then
     
@@ -15,7 +15,7 @@ if Dropping == true then
         Alt8 = 7820540058
     }
     if game:GetService("Players").LocalPlayer.Name == "Lyric_Controller" then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/roblox-scripts/main/DHC/SimpleSeller.lua', true))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Crostide/cdhc/main/gui', true))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
     else
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
