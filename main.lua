@@ -2,7 +2,7 @@ local Dropping = true
 
 if Dropping == true then
     
-    getgenv().Host = "iahkjadshfkjlash" -- Case Sensitive
+    getgenv().Host = "aJoQzB9x" -- Case Sensitive
     getgenv().FPS = 2
     getgenv().Alts = {
         Alt1 = 7825747703,
@@ -14,7 +14,7 @@ if Dropping == true then
         Alt7 = 7826163634,
         Alt8 = 7820540058
     }
-    if game:GetService("Players").LocalPlayer.Name == "iahkjadshfkjlash" then
+    if game:GetService("Players").LocalPlayer.Name == "aJoQzB9x" then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Crostide/cdhc/main/gui', true))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
     else
