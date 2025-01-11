@@ -14,7 +14,7 @@ if Dropping == true then
         Alt7 = 7826163634,
         Alt8 = 7820540058
     }
-    if game:GetService("Players").LocalPlayer.Name == getgenv().Host then
+    if game:GetService("Players").LocalPlayer.Name == "iahkjadshfkjlash" then
         loadstring(game:HttpGet('https://raw.githubusercontent.com/Crostide/cdhc/main/gui', true))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
     else
