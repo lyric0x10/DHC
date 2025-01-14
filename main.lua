@@ -1,7 +1,6 @@
 local Dropping = true
 
 if Dropping == true then
-    
     getgenv().Host = "2e1star"
     getgenv().FPS = 2
     getgenv().Alts = {
