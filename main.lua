@@ -1,8 +1,8 @@
-local Dropping = false
+local Dropping = true
 
 if Dropping == true then
-    getgenv().Host = "gfhddfghdfghfgdh"
-    getgenv().FPS = 2
+    getgenv().Host = "lyrics_asdfasdf"
+    getgenv().FPS = 5
     getgenv().Alts = {
         Alt1 = 7825747703,
         Alt2 = 7817208777,
@@ -13,10 +13,9 @@ if Dropping == true then
         Alt7 = 7826163634,
         Alt8 = 7820540058
     }
-    if game:GetService("Players").LocalPlayer.Name == "gfhddfghdfghfgdh" then
+    if game:GetService("Players").LocalPlayer.Name == "lyrics_asdfasdf" then
         getgenv().prefix = '.'
         loadstring(game:HttpGet('https://raw.githubusercontent.com/el0001/DHMarket/main/cutescript'))()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
     else
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
     end
