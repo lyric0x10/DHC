@@ -1,7 +1,7 @@
 local Dropping = true
 
 if Dropping == true then
-    getgenv().Host = "2e1star"
+    getgenv().Host = "gfhddfghdfghfgdh"
     getgenv().FPS = 2
     getgenv().Alts = {
         Alt1 = 7825747703,
@@ -13,8 +13,9 @@ if Dropping == true then
         Alt7 = 7826163634,
         Alt8 = 7820540058
     }
-    if game:GetService("Players").LocalPlayer.Name == "2e1star" then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Crostide/cdhc/main/gui', true))()
+    if game:GetService("Players").LocalPlayer.Name == "gfhddfghdfghfgdh" then
+        getgenv().prefix = '.'
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/el0001/DHMarket/main/cutescript'))()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/Cash_Counter.lua', true))()
     else
         loadstring(game:HttpGet('https://raw.githubusercontent.com/W9K/Da-Hood-Scripts/main/FreeVers.lua', true))()
