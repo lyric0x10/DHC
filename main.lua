@@ -1,7 +1,7 @@
 local Dropping = true
 
 if Dropping == true then
-    getgenv().Host = "lyrics_asdfasdf"
+    getgenv().Host = "Lyrics_DHC423"
     getgenv().FPS = 5
     getgenv().Alts = {
         Alt1 = 7825747703,
@@ -13,7 +13,7 @@ if Dropping == true then
         Alt7 = 7826163634,
         Alt8 = 7820540058
     }
-    if game:GetService("Players").LocalPlayer.Name == "lyrics_asdfasdf" then
+    if game:GetService("Players").LocalPlayer.Name == "Lyrics_DHC423" then
         getgenv().prefix = '.'
         loadstring(game:HttpGet('https://raw.githubusercontent.com/el0001/DHMarket/main/cutescript'))()
     else
