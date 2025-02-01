@@ -1,4 +1,4 @@
-local Dropping = true
+local Dropping = false
 if Dropping == true then
     if game:GetService("Players").LocalPlayer.Name == "Lyrics_DHC423" then
         script_key = "wvnivHKXYeFGfsVvLzpcfgzXFufrJfLf"
